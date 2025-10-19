@@ -87,7 +87,8 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 ---
 
 
-** Key Design Choices **
+
+__Key Design Choices__
 
 
 1. **Mock Data Generation**
@@ -97,7 +98,7 @@ This solution fulfills all core requirements of the Aadiswan assignment:
   8 Random status/capital updates
 * Fixes typos (e.g., “Guj arat” → “Gujarat”) during integration
 
-2. Change Detection
+2. **Change Detection**
 
 Compares consecutive days using CIN as primary key
 Logs 3 change types:
