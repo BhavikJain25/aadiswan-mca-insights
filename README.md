@@ -69,16 +69,11 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 
     ```bash
 
-
    python generate_mock_mca_data.py
    python integrate_data.py
    python detect_changes.py
    python enrich_data.py
    python generate_summary.py
-
-
-
-
 
 
 3. **Launch dashboard**
@@ -88,19 +83,19 @@ This solution fulfills all core requirements of the Aadiswan assignment:
   streamlit run app.py
 
 
+
 ---
 
 
+** Key Design Choices **
 
 
-🧠 ** Key Design Choices **
+1. **Mock Data Generation**
 
-1. Mock Data Generation
-
-Simulates 3 daily snapshots with realistic drift:
-New CINs added daily (~5–10 per state)
-Random status/capital updates
-Fixes typos (e.g., “Guj arat” → “Gujarat”) during integration
+* Simulates 3 daily snapshots with realistic drift:
+  * New CINs added daily (~5–10 per state)
+  8 Random status/capital updates
+* Fixes typos (e.g., “Guj arat” → “Gujarat”) during integration
 
 2. Change Detection
 
