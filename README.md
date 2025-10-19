@@ -17,6 +17,7 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 
 ## 🗂️ Project Structure
 
+```
 |
 ├── data/                     ← Folder for processed data
 │   ├── mca_data/             ← Subfolder: raw mock MCA snapshots (Day 1–3)
@@ -41,3 +42,14 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 ├── chatbot.py                ← File: Step 6 - Rule-based NLP logic
 |
 └── README.md                 ← File: Project documentation
+
+```
+
+
+
+
+---
+
+
+
+
