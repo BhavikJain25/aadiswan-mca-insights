@@ -38,7 +38,6 @@ mca-insights-engine/
 │ ├── Delhi.csv
 │ ├── Tamil_Nadu.csv
 │ └── Karnataka.csv
-│
 |
 ├── data/                     ← Folder for processed data
 │   ├── mca_data/             ← Subfolder: raw mock MCA snapshots (Day 1–3)
