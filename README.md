@@ -52,4 +52,28 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 
 
 
+## 🚀 How to Run (Local Setup)
+
+### Prerequisites
+- Python 3.8+
+- `pip install pandas streamlit`
+
+### Steps
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/your-username/mca-insights-engine.git
+   cd mca-insights-engine
+
+2. **Regenerate mock data**
+
+```bash
+python generate_mock_mca_data.py
+python integrate_data.py
+python detect_changes.py
+python enrich_data.py
+python generate_summary.py
+   
+
+   
+
 
