@@ -17,6 +17,28 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 ## 🗂️ Project Structure
 
 ```
+
+mca-insights-engine/
+├── mca_data/ # Raw mock MCA snapshots (Day 1–3)
+│ ├── day1/
+│ │ ├── Maharashtra.csv
+│ │ ├── Gujarat.csv
+│ │ ├── Delhi.csv
+│ │ ├── Tamil_Nadu.csv
+│ │ └── Karnataka.csv
+│ ├── day2/
+│ │ ├── Maharashtra.csv
+│ │ ├── Gujarat.csv
+│ │ ├── Delhi.csv
+│ │ ├── Tamil_Nadu.csv
+│ │ └── Karnataka.csv
+│ └── day3/
+│ ├── Maharashtra.csv
+│ ├── Gujarat.csv
+│ ├── Delhi.csv
+│ ├── Tamil_Nadu.csv
+│ └── Karnataka.csv
+│
 |
 ├── data/                     ← Folder for processed data
 │   ├── mca_data/             ← Subfolder: raw mock MCA snapshots (Day 1–3)
