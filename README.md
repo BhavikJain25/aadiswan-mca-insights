@@ -82,10 +82,10 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 
   streamlit run app.py
 
+  ```
 
 
 ---
-
 
 
 __Key Design Choices__
