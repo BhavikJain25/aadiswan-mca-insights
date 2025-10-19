@@ -17,22 +17,27 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 
 ## 🗂️ Project Structure
 
-├── data/
-│ ├── mca_data/ # Raw mock MCA snapshots (Day 1–3)
-│ ├── master_day1.csv # Integrated master datasets
-│ ├── master_day2.csv
-│ └── master_day3.csv
-├── output/
-│ ├── changes_day1_to_day2.csv # Structured change logs
-│ ├── changes_day2_to_day3.csv
-│ ├── all_changes.csv
-│ ├── enriched_data.csv # Mock-enriched sample (50–100 CINs)
-│ └── daily_summary.json # AI-generated daily reports
-├── app.py # Streamlit dashboard (search, filters, chatbot)
-├── generate_mock_mca_data.py # Step 1: Simulate MCA data
-├── integrate_data.py # Step 2: Merge & clean
-├── detect_changes.py # Step 3: Change detection engine
-├── enrich_data.py # Step 4: Mock enrichment
-├── generate_summary.py # Step 5: AI summary generator
-├── chatbot.py # Step 6: Rule-based NLP logic
-└── README.md
+|
+├── data/                     ← Folder for processed data
+│   ├── mca_data/             ← Subfolder: raw mock MCA snapshots (Day 1–3)
+│   ├── master_day1.csv       ← File: integrated master dataset for Day 1
+│   ├── master_day2.csv       ← File: integrated master dataset for Day 2
+│   └── master_day3.csv       ← File: integrated master dataset for Day 3
+|
+├── output/                   ← Folder for generated outputs
+│   ├── changes_day1_to_day2.csv  ← File: change log from Day 1 → Day 2
+│   ├── changes_day2_to_day3.csv  ← File: change log from Day 2 → Day 3
+│   ├── all_changes.csv       ← File: combined changes across all days
+│   ├── enriched_data.csv     ← File: enriched sample (50–100 CINs)
+│   └── daily_summary.json    ← File: AI-generated daily reports
+|
+├── app.py                    ← File: Streamlit dashboard (search, filters, chatbot)
+|
+├── generate_mock_mca_data.py ← File: Step 1 - Simulate MCA data
+├── integrate_data.py         ← File: Step 2 - Merge & clean
+├── detect_changes.py         ← File: Step 3 - Change detection engine
+├── enrich_data.py            ← File: Step 4 - Mock enrichment
+├── generate_summary.py       ← File: Step 5 - AI summary generator
+├── chatbot.py                ← File: Step 6 - Rule-based NLP logic
+|
+└── README.md                 ← File: Project documentation
