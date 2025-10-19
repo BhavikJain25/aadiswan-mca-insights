@@ -76,13 +76,37 @@ This solution fulfills all core requirements of the Aadiswan assignment:
   python enrich_data.py
   python generate_summary.py
 
+---
 
-3. **Regenerate mock data** Launch dashboard
+3. **Regenerate mock data**
 
      ```bash
+
      streamlit run app.py
 
+---
 
+
+
+
+🧠 ** Key Design Choices **
+
+1. Mock Data Generation
+Simulates 3 daily snapshots with realistic drift:
+New CINs added daily (~5–10 per state)
+Random status/capital updates
+Fixes typos (e.g., “Guj arat” → “Gujarat”) during integration
+2. Change Detection
+Compares consecutive days using CIN as primary key
+Logs 3 change types:
+New Incorporation
+Deregistered/Struck Off
+Field Update (with before/after values)
+3. Enrichment (Representative)
+Samples 75 changed CINs from all_changes.csv
+Maps NIC codes → sector labels (e.g., 6202 → "IT Services")
+Generates fake director names & ZaubaCorp-style URLs
+Output format matches spec
 
    
 
