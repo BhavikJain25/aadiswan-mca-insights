@@ -62,7 +62,7 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 1. **Clone this repo**
    ```bash
    
-   git clone https://github.com/your-username/mca-insights-engine.git
+   git clone https://github.com/BhavikJain25/aadiswan-mca-insights
    cd mca-insights-engine
 
 2. **Regenerate mock data**
