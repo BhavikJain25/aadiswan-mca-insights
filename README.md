@@ -11,7 +11,6 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 - ✅ Conversational chatbot (rule-based NLP)
 - ✅ Streamlit dashboard with search & filters
 
-> 📌 **Note**: As per assignment guidelines, this is a *representative implementation*. Real MCA data is simulated, and enrichment uses mock logic — sufficient for evaluation.
 
 ---
 
@@ -125,11 +124,12 @@ __Key Design Choices__
 
 
 4. **AI Features**
-     Daily Summary: Auto-counts changes → saves as daily_summary.json
-Chatbot: Rule-based parser handles:
-“Show new incorporations in Maharashtra”
-“How many companies were struck off?”
-“List companies with capital above 10 lakh”
+   
+     * **Daily Summary**: Auto-counts changes → saves as daily_summary.json
+     * **Chatbot**: Rule-based parser handles:
+          * "Show new incorporations in Maharashtra"
+          * "How many companies were struck off?"
+          * "List companies with capital above 10 lakh"
 
 
 
