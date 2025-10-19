@@ -67,12 +67,14 @@ This solution fulfills all core requirements of the Aadiswan assignment:
 
 2. **Regenerate mock data**
 
-```bash
-python generate_mock_mca_data.py
-python integrate_data.py
-python detect_changes.py
-python enrich_data.py
-python generate_summary.py
+  ```bash
+  python generate_mock_mca_data.py
+  python integrate_data.py
+  python detect_changes.py
+  python enrich_data.py
+  python generate_summary.py
+
+
    
 
    
