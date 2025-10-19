@@ -93,26 +93,56 @@ __Key Design Choices__
 
 1. **Mock Data Generation**
 
-* Simulates 3 daily snapshots with realistic drift:
-  * New CINs added daily (~5–10 per state)
-  8 Random status/capital updates
-* Fixes typos (e.g., “Guj arat” → “Gujarat”) during integration
+ * Simulates 3 daily snapshots with realistic drift:
+   * New CINs added daily (~5–10 per state)
+   * Random status/capital updates
+ * Fixes typos (e.g., “Guj arat” → “Gujarat”) during integration
 
 2. **Change Detection**
 
-Compares consecutive days using CIN as primary key
-Logs 3 change types:
-New Incorporation
-Deregistered/Struck Off
-Field Update (with before/after values)
+ * Compares consecutive days using CIN as primary key
+ * Logs 3 change types:
+     * New Incorporation
+     * Deregistered/Struck Off
+     * Field Update (with before/after values)
 
 
-3. Enrichment (Representative)
+3. **Enrichment**
 
-Samples 75 changed CINs from all_changes.csv
-Maps NIC codes → sector labels (e.g., 6202 → "IT Services")
-Generates fake director names & ZaubaCorp-style URLs
-Output format matches spec
+  * Samples 75 changed CINs from all_changes.csv
+  * Maps NIC codes → sector labels (e.g., 6202 → "IT Services")
+  * Generates fake director names & ZaubaCorp-style URLs
+  * Output format matches spec
+
+   ```bash
+
+   CIN,COMPANY_NAME,STATE,STATUS,SOURCE,FIELD,SOURCE_URL
+
+   ```
+
+
+---
+
+
+4. **AI Features**
+     Daily Summary: Auto-counts changes → saves as daily_summary.json
+Chatbot: Rule-based parser handles:
+“Show new incorporations in Maharashtra”
+“How many companies were struck off?”
+“List companies with capital above 10 lakh”
+
+
+
+---
+5. **Dashboard**
+    * Search by CIN/company name
+    * Filter by State, Status
+    * Visualize change trends (bar chart)
+    * Display enriched data & AI summary
+    * Chat interface powered by rule-based NLP
+
+
+
 
    
 
